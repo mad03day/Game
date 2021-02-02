@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-    RenderWindow window(VideoMode(1920, 1080), "RETARD");
+    RenderWindow window(VideoMode(800, 450), "RETARD");
     CircleShape shape;
     shape.setRadius(40.f);
     shape.setPosition(100.f, 100.f);
@@ -17,7 +17,7 @@ int main()
         while (window.pollEvent(event))
         {
             if (event.type == Event::Closed)
-                window.close();
+               window.close();
         }
         window.clear();
         window.draw(shape);
